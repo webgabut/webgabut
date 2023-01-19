@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIG in</title>
+    <style>
+        @font-face {
+            font-family: "Monaco";
+            src: url(monaco/monaco.ttf);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }body{
+            display: flex;
+            justify-content: center;
+            align-items: center ;
+            min-height: 100vh;
+        }
+        .all{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            border: 1px solid black;
+            width: 300px;
+            height: 400px;
+            background-image: url("log.jpg");
+            background-size: cover;
+            border-radius: 20px;
+            padding: 10px;
+            box-shadow: 5px 10px #888888;
+        }
+        h1{
+            font-family: "Monaco";
+            font-size: 8rem;
+            animation: try  1s alternate infinite;
+            color: aliceblue;
+        }
+        @keyframes try{
+            0%{
+                color: aquamarine;
+            }
+            25%{
+                color: darkturquoise;
+            }
+            50%{
+                color: mediumaquamarine;
+            }
+            75%{
+                color: turquoise;
+            }
+            100%{
+                color: darkcyan;
+            }
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            
+        }
+        input{
+            position: ;
+            width: 150px;
+            height: 30px;
+            border-radius: 20px;
+            text-align: center
+            cursor: pointer;
+        }
+        input:hover{
+            width: 155px;
+            height: 30px;
+            border-radius: 20px;
+            text-align: center
+        }
+       button{
+        width: 80px;
+        height: 30px;
+        font-family: monospace;
+        font-weight: bold;
+        background: transparent;
+        color:aquamarine;
+        cursor: pointer;
+       }
+        
+       
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="all">
+    <h1 id="one">SIG IN</h1>
+    <!-- content -->
+    <div class="content">
+        <input type="text" placeholder="User name or Gmail">
+        <input type="password" placeholder="Your password">
+    </div>
+    <!-- button -->
+        <button type="submit">LOGIN</button>
+    </div>
+</body>
+</html>
